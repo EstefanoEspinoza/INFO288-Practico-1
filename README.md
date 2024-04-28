@@ -33,7 +33,7 @@ Este proyecto consiste en un sistema distribuido para la gestión de documentos 
    CREATE USER 'user1'@'localhost' IDENTIFIED BY '1234';
    GRANT ALL PRIVILEGES ON practico1_distribuidos.* TO 'user1'@'localhost';
    FLUSH PRIVILEGES;
-6. Crear las tablas de practico_distribuidos
+6. Crear las tablas de practico1_distribuidos
     ```bash
    USE practico1_distribuidos;
 
