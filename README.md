@@ -23,14 +23,18 @@ Este proyecto consiste en un sistema distribuido para la gestión de documentos 
 # Configuración de la Base de Datos
 
 1. Conéctate al servidor de MariaDB utilizando el cliente de línea de comandos:
+    ```bash
    mysql -u root -p
-2. Crea una nueva base de datos llamada distribuidos:
+3. Crea una nueva base de datos llamada distribuidos:
+   ```bash
    CREATE DATABASE practico1_distribuidos;
-3. Crea un nuevo usuario y otórgale todos los permisos sobre la base de datos:
+5. Crea un nuevo usuario y otórgale todos los permisos sobre la base de datos:
+    ```bash
    CREATE USER 'user1'@'localhost' IDENTIFIED BY '1234';
    GRANT ALL PRIVILEGES ON practico1_distribuidos.* TO 'user1'@'localhost';
    FLUSH PRIVILEGES;
-4. Crear las tablas de practico_distribuidos
+6. Crear las tablas de practico_distribuidos
+    ```bash
    USE practico1_distribuidos;
 
    CREATE TABLE IF NOT EXISTS video (
@@ -51,8 +55,8 @@ Este proyecto consiste en un sistema distribuido para la gestión de documentos 
        id INT AUTO_INCREMENT PRIMARY KEY,
        nombre VARCHAR(100) NOT NULL
    );
-5. Insertar datos de ejemplo a las tablas
-
+7. Insertar datos de ejemplo a las tablas
+    ```bash
    INSERT INTO video (nombre) VALUES
    ('Introducción a la Biología Celular'),
    ('Historia del Arte Renacentista'),
