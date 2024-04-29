@@ -118,7 +118,7 @@ Este proyecto consiste en un sistema distribuido para la gestión de documentos 
    ```bash
    pip install Flask
    pip install Flask-SQLAlchemy
-   pip install requests==2.26.0
+   pip install requests
    pip install mysql-connector-python
 4. Ejecuta el archivo master.py
    ```bash
