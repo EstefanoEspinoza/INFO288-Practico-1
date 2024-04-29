@@ -1,0 +1,28 @@
+{
+    "slaves": [
+        {
+            "id": 1,
+            "ip": "127.0.0.1",
+            "port": 5001,
+            "category": "video"
+        },
+        {
+            "id": 2,
+            "ip": "127.0.0.1",
+            "port": 5002,
+            "category": "tesis"
+        },
+        {
+            "id": 3,
+            "ip": "127.0.0.1",
+            "port": 5003,
+            "category": "paper"
+        },
+        {
+            "id": 4,
+            "ip": "127.0.0.1",
+            "port": 5004,
+            "category": "libro"
+        }
+    ]
+}
