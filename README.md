@@ -116,7 +116,10 @@ Este proyecto consiste en un sistema distribuido para la gestión de documentos 
    cd INFO288-Practico-1
 3. Instala las dependencias del proyecto utilizando pip:
    ```bash
-   pip install -r requirements.txt
+   pip install Flask
+   pip install Flask-SQLAlchemy
+   pip install requests==2.26.0
+   pip install mysql-connector-python
 4. Ejecuta el archivo master.py
    ```bash
    python3 master.py
@@ -129,17 +132,18 @@ Una vez que hayas clonado o descargado el repositorio y hayas configurado tu ent
 
 La versión de Postman a utilizar se encuentra en el archivo requirements.txt
 
-1. Abrir Postman
-2. Abrir una nueva Request.
-3. Ingresar la dirección y el puerto en el que está alojado el archivo master.py
+1. En caso de no tener descargado Postman descargarlo.
+2. Abrir Postman
+3. Abrir una nueva Request.
+4. Ingresar la dirección y el puerto en el que está alojado el archivo master.py
    **http://127.0.0.1:5000/**
-4. Seleccionar alguna de las 3 posibles actividades. ver_documentos - insertar_documentos - buscar_por_titulo
+5. Seleccionar alguna de las 3 posibles actividades. ver_documentos - insertar_documento - buscar_por_titulo
    **http://127.0.0.1:5000/ver_documentos**
-   **http://127.0.0.1:5000/insertar_documentos**
+   **http://127.0.0.1:5000/insertar_documento**
    **http://127.0.0.1:5000/buscar_por_titulo**
-5. Seleccionar el método adecuado para cada petición
+6. Seleccionar el método adecuado para cada petición
    **GET - http://127.0.0.1:5000/ver_documentos**
-   **POST - http://127.0.0.1:5000/insertar_documentos**
+   **POST - http://127.0.0.1:5000/insertar_documento**
    **GET - http://127.0.0.1:5000/buscar_por_titulo**
 
 # Para ver_documentos:
@@ -149,18 +153,18 @@ La versión de Postman a utilizar se encuentra en el archivo requirements.txt
 2. Ejemplo de petición:
    **GET - http://localhost:5000/ver_documentos?tabla=tesis**
 
-# Para insertar_documentos:
+# Para insertar_documento:
 
 1. Seleccionar la tabla a la que se desea insertar un elemento.
-   ** POST - http://127.0.0.1:5000/insertar_documentos/(video-tesis-paper-libro)**
+   ** POST - http://127.0.0.1:5000/insertar_documento/(video-tesis-paper-libro)**
 2. Seleccionar Body en la parte inferior de donde se ingresa la petición.
-3. Seleccionar JSON en la tabla desplegable de la derecha.
+3. Seleccionar Raw en la parte inferior de Body y luego seleccionar JSON en la tabla desplegable de la derecha.
 4. Ingresar el nombre del documento que se desea insertar.
    **{
     "nombre": "Nombre del documento"
    }**
 5. Ejemplo de petición:
-   **POST - http://127.0.0.1:5000/insertar_documentos/tesis**
+   **POST - http://127.0.0.1:5000/insertar_documento/tesis**
    **Body - JSON**
     **{
     "nombre": "Tesis 1 - ejemplo"
