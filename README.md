@@ -18,11 +18,8 @@ Este proyecto consiste en un sistema distribuido para la gestión de documentos 
 3. Verifica que el servicio esté corriendo:
    ```bash
    sudo systemctl status mariadb
-### Windows
 
-1. Descarga el instalador de MariaDB desde el sitio web oficial y sigue las instrucciones de instalación.
-
-# Configuración de la Base de Datos
+# Configuración de la Base de Datos en UBUNTU
 
 1. Conéctate al servidor de MariaDB utilizando el cliente de línea de comandos:
     ```bash
