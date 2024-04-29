@@ -138,8 +138,8 @@ La versión de Postman a utilizar se encuentra en el archivo requirements.txt
    **http://127.0.0.1:5000/insertar_documentos**
    **http://127.0.0.1:5000/buscar_por_titulo**
 5. Seleccionar el método adecuado para cada petición
-   **GET - http://127.0.0.1:5000/ver_documentos**
-   **POST - http://127.0.0.1:5000/insertar_documentos**
+   **GET - http://127.0.0.1:5000/ver_documentos**\n
+   **POST - http://127.0.0.1:5000/insertar_documentos**\n
    **GET - http://127.0.0.1:5000/buscar_por_titulo**
 
 # Para ver_documentos:
