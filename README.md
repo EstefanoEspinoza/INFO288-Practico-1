@@ -124,11 +124,56 @@ Este proyecto consiste en un sistema distribuido para la gestión de documentos 
      ```bash
    python3 slave.py id
 
-### Peticiones en POSTMAN
+### Uso de Postman para realizar consultas a la API
+Una vez que hayas clonado o descargado el repositorio y hayas configurado tu entorno local como se indica en las secciones anteriores, puedes utilizar Postman para realizar consultas a la API.
 
+La versión de Postman a utilizar se encuentra en el archivo requirements.txt
 
+1. Abrir Postman
+2. Abrir una nueva Request.
+3. Ingresar la dirección y el puerto en el que está alojado el archivo master.py
+   **http://127.0.0.1:5000/**
+4. Seleccionar alguna de las 3 posibles actividades. ver_documentos - insertar_documentos - buscar_por_titulo
+   **http://127.0.0.1:5000/ver_documentos**
+   **http://127.0.0.1:5000/insertar_documentos**
+   **http://127.0.0.1:5000/buscar_por_titulo**
+5. Seleccionar el método adecuado para cada petición
+   **GET - http://127.0.0.1:5000/ver_documentos**
+   **POST - http://127.0.0.1:5000/insertar_documentos**
+   **GET - http://127.0.0.1:5000/buscar_por_titulo**
 
+# Para ver_documentos:
 
+1. Seleccionar la tabla que se desea consultar.
+    **GET - http://127.0.0.1:5000/ver_documentos?tabla=(video-tesis-paper-libro)**
+2. Ejemplo de petición:
+   **GET - http://localhost:5000/ver_documentos?tabla=tesis**
+
+# Para insertar_documentos:
+
+1. Seleccionar la tabla a la que se desea insertar un elemento.
+   ** POST - http://127.0.0.1:5000/insertar_documentos/(video-tesis-paper-libro)**
+2. Seleccionar Body en la parte inferior de donde se ingresa la petición.
+3. Seleccionar JSON en la tabla desplegable de la derecha.
+4. Ingresar el nombre del documento que se desea insertar.
+   **{
+    "nombre": "Nombre del documento"
+   }**
+5. Ejemplo de petición:
+   **POST - http://127.0.0.1:5000/insertar_documentos/tesis**
+   **Body - JSON**
+    **{
+    "nombre": "Tesis 1 - ejemplo"
+    }**
+
+# Para buscar_por_titulo
+
+1. Ingresar el termino que desea buscarse.
+   **GET - http://127.0.0.1:5000/buscar_por_titulo?titulo=titulodeseado**
+2. Ingresar los terminos que desean buscarse.
+   **GET - http://127.0.0.1:5000/buscar_por_titulo?titulo=titulo1&titulo=titulo2&titulo=titulo3**
+3. Ejemplo de petición:
+   **GET - http://127.0.0.1:5000/buscar_por_titulo?titulo=arte&titulo=historia&titulo=matemáticas**
 
 
 
