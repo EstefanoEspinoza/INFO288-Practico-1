@@ -13,9 +13,11 @@ Este proyecto consiste en un sistema distribuido para la gestión de documentos 
    sudo apt update
    sudo apt install mariadb-server
 2. Inicia el servicio de MariaDB:
+   ```bash
    sudo systemctl start mariadb
 3. Verifica que el servicio esté corriendo:
-     sudo systemctl status mariadb
+   ```bash
+   sudo systemctl status mariadb
 ### Windows
 
 1. Descarga el instalador de MariaDB desde el sitio web oficial y sigue las instrucciones de instalación.
@@ -104,6 +106,33 @@ Este proyecto consiste en un sistema distribuido para la gestión de documentos 
    ('Química Inorgánica: Estructura y Reactividad'),
    ('Biología Molecular y Celular: Fundamentos y Aplicaciones'),
    ('Historia del Arte: De las Cuevas de Altamira al Arte Contemporáneo');
+    
+### Ejecución
+1. Clonar el repositorio a su máquina
+    ```bash
+   git clone https://github.com/EstefanoEspinoza/INFO288-Practico-1.git
+2. Entrar al directorio del proyecto
+    ```bash
+   cd INFO288-Practico-1
+3. Instala las dependencias del proyecto utilizando pip:
+   ```bash
+   pip install -r requirements.txt
+4. Ejecuta el archivo master.py
+   ```bash
+   python3 master.py
+5. Ejecuta los distintos esclavos con el archivo slave.py, junto al número de id de esclavo. **1: video - 2: tesis - 3: paper - 4: libro**
+     ```bash
+   python3 slave.py id
+
+### Peticiones en POSTMAN
+
+
+
+
+
+
+
+
 
 
 
