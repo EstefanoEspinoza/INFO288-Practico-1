@@ -133,23 +133,23 @@ La versión de Postman a utilizar se encuentra en el archivo requirements.txt
 1. En caso de no tener descargado Postman descargarlo.
 2. Abrir Postman
 3. Abrir una nueva Request.
-4. Ingresar la dirección y el puerto en el que está alojado el archivo master.py
-   **http://127.0.0.1:5000/**
-5. Seleccionar alguna de las 3 posibles actividades. ver_documentos - insertar_documento - buscar_por_titulo
-   **http://127.0.0.1:5000/ver_documentos**
-   **http://127.0.0.1:5000/insertar_documento**
-   **http://127.0.0.1:5000/buscar_por_titulo**
-6. Seleccionar el método adecuado para cada petición
-   **GET - http://127.0.0.1:5000/ver_documentos**
-   **POST - http://127.0.0.1:5000/insertar_documento**
-   **GET - http://127.0.0.1:5000/buscar_por_titulo**
+4. Ingresar la dirección y el puerto en el que está alojado el archivo master.py <br>
+   **http://127.0.0.1:5000/** <br>
+5. Seleccionar alguna de las 3 posibles actividades. ver_documentos - insertar_documento - buscar_por_titulo <br>
+   **http://127.0.0.1:5000/ver_documentos**<br>
+   **http://127.0.0.1:5000/insertar_documento**<br>
+   **http://127.0.0.1:5000/buscar_por_titulo**<br>
+6. Seleccionar el método adecuado para cada petición<br>
+   **GET - http://127.0.0.1:5000/ver_documentos**<br>
+   **POST - http://127.0.0.1:5000/insertar_documento**<br>
+   **GET - http://127.0.0.1:5000/buscar_por_titulo**<br>
 
 # Para ver_documentos:
 
-1. Seleccionar la tabla que se desea consultar.
-    **GET - http://127.0.0.1:5000/ver_documentos?tabla=(video-tesis-paper-libro)**
-2. Ejemplo de petición:
-   **GET - http://localhost:5000/ver_documentos?tabla=tesis**
+1. Seleccionar la tabla que se desea consultar.<br>
+    **GET - http://127.0.0.1:5000/ver_documentos?tabla=(video-tesis-paper-libro)**<br>
+2. Ejemplo de petición:<br>
+   **GET - http://localhost:5000/ver_documentos?tabla=tesis**<br>
 
 # Para insertar_documento:
 
