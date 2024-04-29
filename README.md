@@ -153,29 +153,29 @@ La versión de Postman a utilizar se encuentra en el archivo requirements.txt
 
 # Para insertar_documento:
 
-1. Seleccionar la tabla a la que se desea insertar un elemento.
-   ** POST - http://127.0.0.1:5000/insertar_documento/(video-tesis-paper-libro)**
-2. Seleccionar Body en la parte inferior de donde se ingresa la petición.
-3. Seleccionar Raw en la parte inferior de Body y luego seleccionar JSON en la tabla desplegable de la derecha.
-4. Ingresar el nombre del documento que se desea insertar.
+1. Seleccionar la tabla a la que se desea insertar un elemento.<br>
+   ** POST - http://127.0.0.1:5000/insertar_documento/(video-tesis-paper-libro)**<br>
+2. Seleccionar Body en la parte inferior de donde se ingresa la petición.<br>
+3. Seleccionar Raw en la parte inferior de Body y luego seleccionar JSON en la tabla desplegable de la derecha.<br>
+4. Ingresar el nombre del documento que se desea insertar.<br>
    **{
     "nombre": "Nombre del documento"
    }**
-5. Ejemplo de petición:
-   **POST - http://127.0.0.1:5000/insertar_documento/tesis**
-   **Body - JSON**
+5. Ejemplo de petición:<br>
+   **POST - http://127.0.0.1:5000/insertar_documento/tesis**<br>
+   **Body - JSON**<br>
     **{
     "nombre": "Tesis 1 - ejemplo"
-    }**
+    }**<br>
 
 # Para buscar_por_titulo
 
-1. Ingresar el termino que desea buscarse.
-   **GET - http://127.0.0.1:5000/buscar_por_titulo?titulo=titulodeseado**
-2. Ingresar los terminos que desean buscarse.
-   **GET - http://127.0.0.1:5000/buscar_por_titulo?titulo=titulo1&titulo=titulo2&titulo=titulo3**
-3. Ejemplo de petición:
-   **GET - http://127.0.0.1:5000/buscar_por_titulo?titulo=arte&titulo=historia&titulo=matemáticas**
+1. Ingresar el termino que desea buscarse.<br>
+   **GET - http://127.0.0.1:5000/buscar_por_titulo?titulo=titulodeseado**<br>
+2. Ingresar los terminos que desean buscarse.<br>
+   **GET - http://127.0.0.1:5000/buscar_por_titulo?titulo=titulo1&titulo=titulo2&titulo=titulo3**<br>
+3. Ejemplo de petición:<br>
+   **GET - http://127.0.0.1:5000/buscar_por_titulo?titulo=arte&titulo=historia&titulo=matemáticas**<br>
 
 
 
